@@ -1,0 +1,71 @@
+Spring Boot Security:-
+=====================
+(1) Spring Boot 3.0 Security | Authentication and Authorization | [New Changes] | javaTechie   --> Basic Authentication (Using user/pwd)
+	https://www.youtube.com/watch?v=R76S0tfv36w&t=1224s
+
+  --> Install MySQL Database into local system
+  --> Create mysql database as "javatechie", user/pass- root / Password
+  	CREATE DATABASE "javatechie";
+  --> Install dbeaver and connect with DB "javatechie"
+
+	select * from userinfo;
+
+	Service Endpoints:-
+	http://localhost:8080/products/welcome
+	http://localhost:8080/users/createuser
+	http://localhost:8080/products/all
+	http://localhost:8080/products/10
+
+	Create User Request Body:-
+	--------------------------
+	{
+	    "name":"Pabitra",
+	    "password":"Pwd3",
+	    "email":"pabitramail03@gmail.com",
+	    "roles":"ROLE_ADMIN"
+	}
+
+	{
+	    "name":"Ajay",
+	    "password":"Pwd1",
+	    "email":"ajay@gmail.com",
+	    "roles":"ROLE_USER"
+	}
+
+	{
+	    "name":"Ravi",
+	    "password":"Pwd2",
+	    "email":"ravi@gmail.com",
+	    "roles":"ROLE_USER"
+	}
+
+Authorization :- What all users can access as per thir role.
+Authentication :- Authentication is nothing, Whatever user and password you have given is correct or not. So that user is Authenticate to access application or not.
+
+Source Code- https://github.com/Pabitramaiti/spring-boot-security-3.0
+
+(2) Spring Boot 3.0 + Spring Security 6 | JWT Authentication & Authorization | JavaTechie   --> JWT Authentication (Using Bearer token)
+	https://www.youtube.com/watch?v=NcLtLZqGu2M
+
+	--> jwt.io
+
+	http://localhost:8080/products/authenticate
+
+Source Code- https://github.com/Pabitramaiti/spring-boot3-jwt-security-main
+
+(3) Microservices Security Using JWT | Spring Cloud Gateway | JavaTechie  --> VVI, 
+	https://www.youtube.com/watch?v=MWvnmyLRUik
+	https://github.com/Java-Techie-jt/jwt-apigateway-security
+	
+
+	This tutorial will guide you How to secure your microservices with with JWT Authentication using Spring Cloud Gateway. 
+
+	We are going to discuss an architecture in which one microservice will act as a api gateway service  which does central authentication, redirect an incoming request to other microservices. The main advantage of this architecture is you can easily add multiple microservices to the system and all authentication, authorization will be taken care from a central unit
+
+(4) Spring Cloud API Gateway | JWT Security | Pass UserDetails to Microservices | JavaTechie --> 3 and 4 are related. 
+
+	In this Tutorial, we will understand How to pass authentication user information or any other information (it is up to you as per requirement) from Spring cloud api gateway to other microservices.
+
+	https://www.youtube.com/watch?v=qODoDq5_hAM
+	https://github.com/Java-Techie-jt/jwt-apigateway-security
+
